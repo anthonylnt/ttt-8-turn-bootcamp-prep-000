@@ -19,11 +19,11 @@ end
 
 def valid_move?(board, index)
   if index.between?(0,8) && !position_taken?(board, index)
-    return true
+    return true then
     move(board, index)
     display_board(board)
   else
-    return false
+    return false then
     turn(board)
   end
 end
