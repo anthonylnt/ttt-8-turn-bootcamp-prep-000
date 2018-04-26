@@ -18,7 +18,7 @@ def input_to_index(user_input)
 end
 
 def valid_move?(index, board)
-  if index.between?(0,8) && position_taken?(board, index)
+  if index.between?(0,8) && !position_taken?(board, index)
     move(board, index)
     display_board(board)
   else
@@ -27,7 +27,7 @@ def valid_move?(index, board)
 end
 
 def position_taken?(board, index)
-  if move(board, index).include?("O") 
+  if board[index] ==
     true
   else 
     false
