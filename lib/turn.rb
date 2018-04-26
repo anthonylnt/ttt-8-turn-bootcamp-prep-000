@@ -27,7 +27,7 @@ def valid_move?(index, board)
 end
 
 def position_taken?(board, index)
-  if board[index].include? "O" || board[index].include? "X"
+  if board[index].include? nil
     true
   else 
     false
