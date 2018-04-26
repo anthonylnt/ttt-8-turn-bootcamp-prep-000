@@ -27,7 +27,7 @@ def valid_move?(index, board)
 end
 
 def position_taken?(board, index)
-  if move(board, index).empty? 
+  if move(board, index).include?() 
     true
   else 
     false
