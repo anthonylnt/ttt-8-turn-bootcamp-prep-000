@@ -27,11 +27,8 @@ def valid_move?(board, index)
 end
 
 def position_taken?(board, index)
-  if board[index].include? "O"
-    true
-  else 
-    false
-  end
+  ! (board[index] ==  " " || board[index] == "" || board[index] == nil) ?
+  false:true
 end
 
 def move(array, index, value = "X")
